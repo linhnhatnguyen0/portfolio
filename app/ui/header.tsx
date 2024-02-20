@@ -3,8 +3,9 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <header className="fixed w-full flex items-center justify-between h-[10vh]  pl-20 pr-20 z-10">
-      <ul className="flex w-[40%] justify-between">
+    <header className="fixed w-full flex items-center justify-between h-[10vh]  px-20 z-10 bg-[#84a59dcb] backdrop-blur-md">
+      <div className="text-4xl font-bold">Logo</div>
+      <ul className="flex w-[40%] justify-between font-semibold">
         <li>
           <Link href={"/"}>Home</Link>
         </li>

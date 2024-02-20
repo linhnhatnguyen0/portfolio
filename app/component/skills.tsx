@@ -7,7 +7,7 @@ export default function Skills() {
   return (
     <>
       <Header />
-      <main className="h-screen w-screen flex items-center flex-col justify-start">
+      <main className="h-screen w-full flex items-center flex-col justify-start relative">
         <Lottie
           animationData={skillAnimation}
           autoplay
@@ -15,7 +15,7 @@ export default function Skills() {
           style={{
             height: "90%",
             width: "90%",
-            position: "fixed",
+            position: "absolute",
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
