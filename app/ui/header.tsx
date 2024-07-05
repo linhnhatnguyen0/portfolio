@@ -3,24 +3,24 @@ import Link from 'next/link';
 
 function Header() {
   return (
-    <header className="fixed w-full flex items-center justify-between h-[8vh]  px-20 z-10 bg-[#84a59dcb] backdrop-blur-md">
+    <header className="fixed w-full flex items-center justify-between h-[8vh]  px-20 z-10 backdrop-blur-md">
       <div className="text-4xl font-bold">Logo</div>
       <ul className="flex w-[40%] justify-between font-semibold">
         <li>
-          <Link href={'/'}>Home</Link>
+          <a href="/">Home</a>
         </li>
         <li>
-          <Link href={'/about'}>About</Link>
+          <a href="#about">About</a>
         </li>
         <li>
-          <Link href={'/case'}>Case Study</Link>
+          <a href="#case">Cases Study</a>
         </li>
         <li>
-          <Link href={'/contact'}>Contact</Link>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
       <div className="">
-        <div className="border-2 px-6 py-1 rounded-lg">
+        <div className="border-2 px-6 py-1 rounded-lg border-[#8e705b]">
           <span className="font-bold">EN</span>
         </div>
       </div>

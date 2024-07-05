@@ -2,13 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --foreground-rgb: 247, 237, 226;
-  --background-rgb: 132, 165, 157;
+  --background-rgb: 0, 165, 157;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  color: #8e705b;
+  background: #faf7ea;
   overflow-x: hidden;
 }

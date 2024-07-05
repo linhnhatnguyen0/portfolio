@@ -6,7 +6,7 @@ import skillAnimation from '@/public/skills.json';
 export default function Skills() {
   return (
     <>
-      <div className="h-full w-screen flex items-center flex-col justify-start relative">
+      <div className="h-screen w-full flex items-center flex-col justify-start fixed top-0 left-0 ">
         <Lottie
           animationData={skillAnimation}
           autoplay

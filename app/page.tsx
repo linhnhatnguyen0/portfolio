@@ -6,25 +6,25 @@ import Hero from './component/hero';
 import Skills from './component/skills';
 
 const words = [
-  { text: 'Nhat', className: 'text-[#F7EDE2] ' },
-  { text: 'Linh', className: 'text-[#F7EDE2] ' },
-  { text: 'NGUYEN', className: 'text-[#F7EDE2] ' },
+  { text: 'Nhat', className: 'text-[#8E705B] ' },
+  { text: 'Linh', className: 'text-[#8E705B] ' },
+  { text: 'NGUYEN', className: 'text-[#8E705B] ' },
 ];
 const words2 = [
-  { text: 'FRONT-END', className: 'text-[#F7EDE2] ' },
-  { text: 'DEVELOPER', className: 'text-[#F7EDE2] ' },
+  { text: 'FRONT-END', className: 'text-[#8E705B] ' },
+  { text: 'DEVELOPER', className: 'text-[#8E705B] ' },
 ];
 
 export default function Home() {
   return (
     <>
       <Header />
-      <div className="flex flex-row overflow-x-hidden w-[500vw] h-screen overflow-y-auto">
+      <div className="flex flex-col w-full">
         <Hero />
         <About />
         <CaseStudy />
         <Contact />
-        <Skills />
+        {/* <Skills /> */}
       </div>
     </>
   );
