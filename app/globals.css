@@ -7,9 +7,8 @@
   --background-rgb: 132, 165, 157;
 }
 
-
 body {
   color: rgb(var(--foreground-rgb));
-  background: 
-    rgb(var(--background-rgb));
+  background: rgb(var(--background-rgb));
+  overflow-x: hidden;
 }

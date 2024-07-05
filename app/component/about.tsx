@@ -1,15 +1,15 @@
-import Header from "../ui/header";
-import Image from "next/image";
-import profile from "@/public/about.webp";
-import profile_chaise from "@/public/profile-chaise.jpg";
-import profile_music from "@/public/profile-music.jpg";
-import profile_thinking from "@/public/profile_thinking.jpg";
-import Link from "next/link";
+import Header from '../ui/header';
+import Image from 'next/image';
+import profile from '@/public/about.webp';
+import profile_chaise from '@/public/profile-chaise.jpg';
+import profile_music from '@/public/profile-music.jpg';
+import profile_thinking from '@/public/profile_thinking.jpg';
+import Link from 'next/link';
 
 function About() {
   return (
     <>
-      <div className="flex items-center h-screen w-full relative justify-around px-24">
+      <div className="flex items-center h-full w-screen relative justify-around px-24">
         <div className="left w-[50%] flex flex-col justify-between">
           <h1 className="text-8xl font-bold mb-8">ABOUT ME</h1>
           <p className="w-[80%] mb-8">
