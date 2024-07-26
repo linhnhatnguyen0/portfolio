@@ -1,9 +1,11 @@
+'use client';
 import Header from '../ui/header';
 import Image from 'next/image';
 import profile from '@/public/about.webp';
 import profile_chaise from '@/public/profile-chaise.jpg';
 import profile_music from '@/public/profile-music.jpg';
 import profile_thinking from '@/public/profile_thinking.jpg';
+import { motion } from 'framer-motion';
 
 function About() {
   return (
@@ -26,24 +28,36 @@ function About() {
         </p>
         <ul className="grid grid-cols-2 grid-rows-2 gap-8">
           <li className="">
-            <button className="w-3/4 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              className="w-3/4 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
+            >
               Personal project
-            </button>
+            </motion.button>
           </li>
           <li>
-            <button className="w-3/4 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              className="w-3/4 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
+            >
               Education
-            </button>
+            </motion.button>
           </li>
           <li>
-            <button className="w-3/4 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              className="w-3/4 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
+            >
               Skills
-            </button>
+            </motion.button>
           </li>
           <li>
-            <button className="w-3/4 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              className="w-3/4 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
+            >
               Experience
-            </button>
+            </motion.button>
           </li>
         </ul>
       </div>

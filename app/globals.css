@@ -7,7 +7,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --foreground-rgb: 247, 237, 226;
   --background-rgb: 0, 165, 157;
@@ -17,4 +16,87 @@ body {
   color: #8e705b;
   background: #faf7ea;
   overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+h1 {
+  font-size: 32px; /* 8 * 4 */
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 28px; /* 7 * 4 */
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px; /* 6 * 4 */
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 20px; /* 5 * 4 */
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 16px; /* 4 * 4 */
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 12px; /* 3 * 4 */
+  font-weight: bold;
+}
+
+.markdown {
+  @apply flex flex-col gap-3 font-sans text-lg tracking-wide mb-20;
+}
+
+.markdown > h1 {
+  @apply font-serif text-4xl text-center tracking-tight;
+}
+
+.markdown > h2 {
+  @apply font-serif text-3xl tracking-tight;
+}
+
+.markdown > ol {
+  @apply list-decimal flex flex-col mx-10 gap-2;
+}
+
+.markdown > ul {
+  @apply list-disc flex flex-col mx-10 gap-2;
+}
+
+.markdown > pre {
+  @apply bg-neutral-950 text-neutral-50 p-5 overflow-scroll;
+}
+
+.markdown > blockquote {
+  @apply pl-5 italic border-l-2 border-neutral-600 border-opacity-40;
+}
+
+.markdown > p > a > img {
+  @apply w-1/2 mx-auto rounded-lg;
 }

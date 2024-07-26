@@ -1,4 +1,6 @@
 import Header from '@/app/ui/header';
+import OpenCard from './article';
+import projets3 from '@/public/project-s3.png';
 
 export default function Contact() {
   return (

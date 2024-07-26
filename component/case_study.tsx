@@ -1,9 +1,9 @@
-import Card from '../ui/card';
+import Card from '../app/ui/card';
 import projetS5 from '@/public/project-s5.png';
 import portfolioImage from '@/public/project-portfolio.png';
 import projetS3 from '@/public/project-s3.png';
-import Article from './article';
-import getArticles from '../lib/cases';
+import Article from '../app/component/article';
+import getArticles from '../app/lib/cases';
 export default function CaseStudy() {
   const articles = getArticles();
   return (

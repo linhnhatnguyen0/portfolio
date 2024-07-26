@@ -10,7 +10,7 @@ export default function Card(props: {
     <div className="w-full h-full flex items-center justify-center">
       <a
         href={props.link}
-        className="w-3/4 h-full bg-[#e7e4d6] rounded-xl flex justify-start items-center flex-col p-8 hover:shadow-2xl transition"
+        className="w-3/4 h-full bg-[#e7e4d6] rounded-xl flex justify-start items-center flex-col p-8 hover:shadow-lg transition"
       >
         <Image src={props.image} alt="" className="w-full rounded-md mb-12" />
         <div className="description flex flex-col flex-shrink-0">
