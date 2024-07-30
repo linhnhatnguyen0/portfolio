@@ -1,10 +1,5 @@
 import type { Metadata } from 'next';
-import { DM_Sans, Playfair_Display } from 'next/font/google';
 import './globals.css';
-import Header from './ui/header';
-
-const dmSans = DM_Sans({ subsets: ['latin'] });
-const playfair = Playfair_Display({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Nhat Linh NGUYEN',
@@ -18,9 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${dmSans.className} ${playfair.className}`}>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

@@ -15,7 +15,7 @@ const words2 = [
 export default function Home() {
   return (
     <>
-      <div className="h-screen w-full flex flex-col justify-center items-center font-semibold">
+      <div className="h-[80vh] w-full flex flex-col justify-center items-center font-semibold ">
         <TypewriterEffect words={words} className="mb-5" />
         <TypewriterEffect words={words2} />
       </div>

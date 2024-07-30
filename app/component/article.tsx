@@ -44,7 +44,7 @@ export default function Article(props: {
             exit={{ opacity: 0 }}
             // onClick={() => setOpen(false)}
           >
-            <motion.div className="w-3/5 h-5/6 flex flex-col items-start justify-start bg-white overflow-y-auto p-10 rounded-lg">
+            <motion.div className="w-4/5 h-5/6 flex flex-col items-start justify-start bg-[#ece9dc] overflow-y-auto p-10 rounded-lg">
               <motion.h1 className="mb-8 text-5xl">{props.title}</motion.h1>
               <motion.div className="mt-8">
                 <Markdown

@@ -15,7 +15,7 @@ function About() {
     >
       <div className="left w-[50%] flex flex-col justify-between">
         <h1 className="text-8xl font-bold mb-8">ABOUT ME</h1>
-        <p className="w-[80%] mb-8">
+        <p className="w-[80%] mb-8 font-medium leading-7">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industrys standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -30,7 +30,7 @@ function About() {
           <li className="">
             <motion.button
               whileHover={{ scale: 1.05 }}
-              className="w-3/4 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
+              className="w-2/3 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
             >
               Personal project
             </motion.button>
@@ -38,7 +38,7 @@ function About() {
           <li>
             <motion.button
               whileHover={{ scale: 1.05 }}
-              className="w-3/4 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
+              className="w-2/3 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
             >
               Education
             </motion.button>
@@ -46,7 +46,7 @@ function About() {
           <li>
             <motion.button
               whileHover={{ scale: 1.05 }}
-              className="w-3/4 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
+              className="w-2/3 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
             >
               Skills
             </motion.button>
@@ -54,7 +54,7 @@ function About() {
           <li>
             <motion.button
               whileHover={{ scale: 1.05 }}
-              className="w-3/4 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
+              className="w-2/3 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
             >
               Experience
             </motion.button>
