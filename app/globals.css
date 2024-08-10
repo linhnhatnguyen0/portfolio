@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 :root {
-  --foreground-rgb: 247, 237, 226;
+  --foreground-rgb: 142, 112, 91;
   --background-rgb: 0, 165, 157;
 }
 
@@ -71,7 +71,7 @@ h6 {
   font-size: 12px; /* 3 * 4 */
   font-weight: bold;
 }
-
+/* 
 .markdown {
   @apply flex flex-col gap-3 font-sans text-lg tracking-wide mb-20;
 }
@@ -102,4 +102,4 @@ h6 {
 
 .markdown > p > a > img {
   @apply w-1/2 mx-auto rounded-lg my-10;
-}
+} */

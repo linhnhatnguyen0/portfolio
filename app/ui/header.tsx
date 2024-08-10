@@ -14,11 +14,7 @@ import {
 
 function Header() {
   return (
-    <Navbar
-      shouldHideOnScroll
-      className="h-[10vh] px-10 z-50"
-      position="sticky"
-    >
+    <Navbar className="h-[10vh] px-10 z-50" position="static">
       <NavbarBrand className="text-4xl font-bold">Logo</NavbarBrand>
       <NavbarContent
         className="hidden sm:flex gap-24 font-semibold"
@@ -37,25 +33,21 @@ function Header() {
           <a href="#contact">Contact</a>
         </NavbarItem>
       </NavbarContent>
-      <NavbarContent className="">
+      <NavbarContent justify="end">
         <Dropdown>
           <NavbarItem>
             <DropdownTrigger>
-              <Button className="border-2 px-2 py-1 rounded-lg border-none focus-visible:outline-none">
+              <Button variant="bordered" color="primary">
                 <RiGlobalLine size={24} />
               </Button>
             </DropdownTrigger>
           </NavbarItem>
-          <DropdownMenu className="w-[100px] rounded-md py-2 px-1 bg-[#eceadd]">
-            <DropdownItem>
-              <Button className="hover:bg-[#e2e0d6] rounded-sm w-full py-1 mb-2">
-                EN
-              </Button>
+          <DropdownMenu color="primary" className="text-center">
+            <DropdownItem className="hover:text-white">
+              <span className="font-bold">EN</span>
             </DropdownItem>
-            <DropdownItem>
-              <Button className="hover:bg-[#e2e0d6] rounded-sm w-full py-1">
-                FR
-              </Button>
+            <DropdownItem className="hover:text-white">
+              <span className="font-bold">FR</span>
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>

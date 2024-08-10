@@ -4,6 +4,7 @@ import portfolioImage from '@/public/project-portfolio.png';
 import projetS3 from '@/public/project-s3.png';
 import Article from './article';
 import getArticles from '../lib/cases';
+import { useEffect } from 'react';
 export default function CaseStudy() {
   const articles = getArticles();
   return (
