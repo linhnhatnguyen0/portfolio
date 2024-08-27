@@ -6,33 +6,27 @@ import profile_chaise from '@/public/profile-chaise.jpg';
 import profile_music from '@/public/profile-music.jpg';
 import profile_thinking from '@/public/profile_thinking.jpg';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'next-i18next';
 
 function About() {
+  const { t } = useTranslation('common');
   return (
     <div
       id="about"
       className="flex items-center h-screen w-full relative justify-around px-24"
     >
       <div className="left w-[50%] flex flex-col justify-between">
-        <h1 className="text-8xl font-bold mb-8">ABOUT ME</h1>
+        <h1 className="text-8xl font-bold mb-8">{t('about-title')}</h1>
         <p className="w-[80%] mb-8 font-medium leading-7">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industrys standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          {t('about-description')}
         </p>
         <ul className="grid grid-cols-2 grid-rows-2 gap-8">
-          <li className="">
+          <li>
             <motion.button
               whileHover={{ scale: 1.05 }}
               className="w-2/3 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
             >
-              Personal project
+              {t('about-education')}
             </motion.button>
           </li>
           <li>
@@ -40,7 +34,7 @@ function About() {
               whileHover={{ scale: 1.05 }}
               className="w-2/3 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
             >
-              Education
+              {t('about-skills')}
             </motion.button>
           </li>
           <li>
@@ -48,15 +42,7 @@ function About() {
               whileHover={{ scale: 1.05 }}
               className="w-2/3 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
             >
-              Skills
-            </motion.button>
-          </li>
-          <li>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              className="w-2/3 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
-            >
-              Experience
+              {t('about-experience')}
             </motion.button>
           </li>
         </ul>

@@ -11,8 +11,10 @@ import {
   Button,
   DropdownMenu,
 } from '@nextui-org/react';
+import { useTranslation } from 'next-i18next';
 
 function Header() {
+  const { t } = useTranslation('common');
   return (
     <Navbar className="h-[10vh] px-10 z-50" position="static">
       <NavbarBrand className="text-4xl font-bold">Logo</NavbarBrand>
@@ -21,16 +23,16 @@ function Header() {
         justify="center"
       >
         <NavbarItem>
-          <a href="/">Home</a>
+          <a href="/">{t('header-home')}</a>
         </NavbarItem>
         <NavbarItem>
-          <a href="#about">About</a>
+          <a href="#about">{t('header-about')}</a>
         </NavbarItem>
         <NavbarItem>
-          <a href="#case">Cases Study</a>
+          <a href="#case">{t('header-cases')}</a>
         </NavbarItem>
         <NavbarItem>
-          <a href="#contact">Contact</a>
+          <a href="#contact">{t('header-contact')}</a>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
@@ -42,7 +44,22 @@ function Header() {
               </Button>
             </DropdownTrigger>
           </NavbarItem>
-          <DropdownMenu color="primary" className="text-center">
+          <DropdownMenu
+            className="text-center"
+            itemClasses={{
+              base: [
+                'rounded-md',
+                'text-default-500',
+                'transition-opacity',
+                'data-[hover=true]:text-white',
+                'data-[hover=true]:bg-[#8e705b]',
+                'dark:data-[hover=true]:bg-default-50',
+                'data-[selectable=true]:focus:bg-default-50',
+                'data-[pressed=true]:opacity-70',
+                'data-[focus-visible=true]:ring-default-500',
+              ],
+            }}
+          >
             <DropdownItem className="hover:text-white">
               <span className="font-bold">EN</span>
             </DropdownItem>

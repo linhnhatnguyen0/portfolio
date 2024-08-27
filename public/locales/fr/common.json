@@ -1,0 +1,19 @@
+{
+  "header-home": "Accueil",
+  "header-about": "À propos",
+  "header-cases": "Études de cas",
+  "header-contact": "Contact",
+  "hero-title": "Développeur Frontend",
+  "hero-cv": "Mon CV",
+  "about-title": "À propos de moi",
+  "about-description": "Je suis un développeur frontend avec 5 ans d'expérience. J'ai travaillé avec React, Angular et Vue. Je suis passionné par la création de sites web beaux et fonctionnels.",
+  "about-education": "Éducation",
+  "about-experience": "Expérience",
+  "about-skills": "Compétences",
+  "cases-title": "Études de cas",
+  "contact-title": "Contact",
+  "contact-email": "E-mail",
+  "contact-name": "Nom",
+  "contact-desc": "Description",
+  "contact-send": "Envoyer"
+}

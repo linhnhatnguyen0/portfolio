@@ -4,8 +4,9 @@ import CaseStudy from './component/case_study';
 import Contact from './component/contact';
 import Hero from './component/hero';
 import Skills from './component/skills';
+import { appWithTranslation } from 'next-i18next';
 
-export default function Home() {
+function Home() {
   return (
     <>
       <Header />
@@ -19,3 +20,4 @@ export default function Home() {
     </>
   );
 }
+export default appWithTranslation(Home);

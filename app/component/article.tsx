@@ -42,16 +42,13 @@ export default function Article(props: {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            // onClick={() => setOpen(false)}
           >
             <motion.div className="w-4/5 h-5/6 flex flex-col items-start justify-start bg-[#ece9dc] overflow-y-auto p-10 rounded-lg">
               <motion.h1 className="mb-8 text-5xl">{props.title}</motion.h1>
               <motion.div className="mt-8">
-                <Markdown
-                  remarkPlugins={[remarkImages]}
-                  children={props.content}
-                  className={'markdown'}
-                />
+                <Markdown remarkPlugins={[remarkImages]} className={'markdown'}>
+                  {props.content}
+                </Markdown>
               </motion.div>
               <motion.button
                 className="absolute top-4 right-4 bg-[#8e705b] rounded-full p-2"

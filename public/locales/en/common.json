@@ -1,0 +1,20 @@
+{
+  "header-home": "Home",
+  "header-about": "About",
+  "header-cases": "Cases Studies",
+  "header-contact": "Contact",
+  "hero-title": "Frontend Developer",
+  "hero-cv": "My resume",
+  "hero-download": "Download",
+  "about-title": "About me",
+  "about-description": "I'm a frontend developer with 5 years of experience. I have worked with React, Angular and Vue. I'm passionate about creating beautiful and functional websites.",
+  "about-education": "Education",
+  "about-experience": "Experience",
+  "about-skills": "Skills",
+  "cases-title": "Cases Studies",
+  "contact-title": "Contact",
+  "contact-email": "Email",
+  "contact-name": "Name",
+  "contact-desc": "Description",
+  "contact-send": "Send"
+}
