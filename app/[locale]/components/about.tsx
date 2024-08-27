@@ -6,7 +6,7 @@ import profile_chaise from '@/public/profile-chaise.jpg';
 import profile_music from '@/public/profile-music.jpg';
 import profile_thinking from '@/public/profile_thinking.jpg';
 import { motion } from 'framer-motion';
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from 'react-i18next';
 
 function About() {
   const { t } = useTranslation('common');

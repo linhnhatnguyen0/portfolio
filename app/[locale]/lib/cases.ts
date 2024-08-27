@@ -4,7 +4,12 @@ import matter from 'gray-matter';
 import path from 'path';
 import moment from 'moment';
 import { ArticleItem } from '../types/index';
-const articlesDirectory = path.join(process.cwd(), 'app', 'cases-study');
+const articlesDirectory = path.join(
+  process.cwd(),
+  'app',
+  '[locale]',
+  'cases-study'
+);
 
 const getArticles = (): ArticleItem[] => {
   const fileNames = fs.readdirSync(articlesDirectory);

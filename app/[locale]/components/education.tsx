@@ -1,7 +1,7 @@
 'use client';
 import Lottie from 'lottie-react';
 import educationAnimation from '@/public/education.json';
-import Header from '@/app/ui/header';
+import Header from '@/app/[locale]/ui/header';
 
 export default function Education() {
   return (

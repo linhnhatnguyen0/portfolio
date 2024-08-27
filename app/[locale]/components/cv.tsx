@@ -6,7 +6,7 @@ import Image from 'next/image';
 import cv from '@/public/cv.png';
 import { IoMdClose } from 'react-icons/io';
 import { IoPerson } from 'react-icons/io5';
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from 'react-i18next';
 
 export default function CV() {
   const { t } = useTranslation('common');
@@ -36,7 +36,11 @@ export default function CV() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <motion.div className="w-1/2 h-5/6 flex flex-col items-start justify-start bg-[#ece9dc] overflow-y-auto p-4 rounded-lg">
+            <motion.div
+              className="w-full h-screen bg-transparent absolute top-0 left-0 z-0"
+              onClick={() => setOpen(false)}
+            ></motion.div>
+            <motion.div className="w-1/2 h-5/6 flex flex-col items-start justify-start bg-[#ece9dc] overflow-y-auto p-4 rounded-lg z-10">
               <motion.div className="mt-4 flex flex-col items-center justify-start">
                 <Button
                   className="mb-4 text-medium font-bold bg-[#8e705b] text-white !rounded-lg !shadow-lg !transform hover:scale-105 transition-all duration-300"

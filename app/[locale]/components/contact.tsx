@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import contactImage from '../../public/contact.png';
+import contactImage from '@/public/contact.png';
 import { Button, Input, Textarea } from '@nextui-org/react';
 import React from 'react';
 

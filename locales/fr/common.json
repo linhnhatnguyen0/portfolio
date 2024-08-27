@@ -15,5 +15,8 @@
   "contact-email": "E-mail",
   "contact-name": "Nom",
   "contact-desc": "Description",
-  "contact-send": "Envoyer"
+  "contact-send": "Envoyer",
+  "contact-enter-mail": "Entrez votre e-mail",
+  "contact-enter-name": "Entrez votre nom",
+  "contact-enter-desc": "Entrez votre description"
 }
