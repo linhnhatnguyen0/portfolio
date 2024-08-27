@@ -18,7 +18,7 @@ export default function Article(props: {
   return (
     <div>
       <motion.div
-        className="w-full h-full flex items-center justify-center"
+        className="w-full h-full flex items-center justify-center !opacity-100 !transform !translate-x-0 !translate-y-0 !pointer-events-auto"
         key={props.id}
         layoutId={props.title}
         onClick={() => setOpen(true)}

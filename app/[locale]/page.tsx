@@ -30,6 +30,15 @@ export default async function Home({ params: { locale } }: HomeProps) {
         <CaseStudy />
         <Contact />
         {/* <Skills /> */}
+        <iframe
+          className="rounded-lg fixed bottom-5 right-1/2 transform translate-x-1/2"
+          src="https://open.spotify.com/embed/track/2plbrEY59IikOBgBGLjaoe?utm_source=generator"
+          width="20%"
+          height="80"
+          allowFullScreen
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
       </div>
     </TranslationProvider>
   );

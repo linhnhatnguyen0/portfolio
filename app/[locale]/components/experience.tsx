@@ -1,12 +1,12 @@
 'use client';
 import Image from 'next/image';
-import skills from '@/public/skills.png';
+import experiences from '@/public/experiences.png';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 import { IoMdClose } from 'react-icons/io';
 import { useTranslation } from 'react-i18next';
 
-export default function Skills() {
+export default function Experience() {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
   return (
@@ -16,7 +16,7 @@ export default function Skills() {
         onClick={() => setOpen(true)}
         className="w-2/3 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
       >
-        {t('about-skills')}
+        {t('about-experiences')}
       </motion.button>
       <AnimatePresence>
         {open && (
@@ -35,12 +35,12 @@ export default function Skills() {
             <motion.div className="w-3/4 h-5/6 flex flex-col items-start justify-start bg-[#fcfaf1] overflow-y-auto p-8 rounded-lg z-10">
               <motion.div className=" flex flex-col items-center justify-start">
                 <h1 className="my-5 font-bold text-[80px] text-[#8E705B]">
-                  {t('about-skills').toUpperCase()}
+                  {t('about-experiences').toUpperCase()}
                 </h1>
                 <Image
-                  src={skills}
-                  alt="skills tree"
-                  className="mt-10 mb-32 w-2/3"
+                  src={experiences}
+                  alt="experiences tree"
+                  className="mb-32 w-2/3"
                 />
               </motion.div>
               <motion.button

@@ -1,19 +1,23 @@
-import Image from 'next/image';
-import Header from '../ui/header';
+'use client';
 import { TypewriterEffect } from '../ui/typewriter-effect';
 import CV from './cv';
-
-const words = [
-  { text: 'Nhat', className: 'text-[#8E705B] ' },
-  { text: 'Linh', className: 'text-[#8E705B] ' },
-  { text: 'NGUYEN', className: 'text-[#8E705B] ' },
-];
-const words2 = [
-  { text: 'FRONT-END', className: 'text-[#8E705B] ' },
-  { text: 'DEVELOPER', className: 'text-[#8E705B] ' },
-];
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
+  const { t } = useTranslation();
+  const words = [
+    { text: 'Nhat', className: 'text-[#8E705B] ' },
+    { text: 'Linh', className: 'text-[#8E705B] ' },
+    { text: 'NGUYEN', className: 'text-[#8E705B] ' },
+  ];
+  const word1 = t('hero-title').split(' ')[0];
+  const word2 = t('hero-title').split(' ')[1];
+
+  const words2 = [
+    { text: word1, className: 'text-[#8E705B] ' },
+    { text: word2, className: 'text-[#8E705B] ' },
+  ];
+
   return (
     <>
       <div className="h-[80vh] w-full flex flex-col justify-center items-center font-semibold ">

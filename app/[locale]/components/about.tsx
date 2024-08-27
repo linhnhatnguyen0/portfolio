@@ -7,6 +7,9 @@ import profile_music from '@/public/profile-music.jpg';
 import profile_thinking from '@/public/profile_thinking.jpg';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import Education from './education';
+import Skills from './skills';
+import Experience from './experience';
 
 function About() {
   const { t } = useTranslation('common');
@@ -22,28 +25,13 @@ function About() {
         </p>
         <ul className="grid grid-cols-2 grid-rows-2 gap-8">
           <li>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              className="w-2/3 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
-            >
-              {t('about-education')}
-            </motion.button>
+            <Education />
           </li>
           <li>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              className="w-2/3 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
-            >
-              {t('about-skills')}
-            </motion.button>
+            <Skills />
           </li>
           <li>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              className="w-2/3 rounded-lg hover:text-[#faf7ea] text-[#8E705B] border-2 hover:border-transparent font-semibold hover:bg-[#8E705B] border-[#8E705B] bg-transparent py-3 flex items-center justify-center transition ease-in-out hover:shadow-lg"
-            >
-              {t('about-experience')}
-            </motion.button>
+            <Experience />
           </li>
         </ul>
       </div>
