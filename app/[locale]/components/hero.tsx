@@ -20,9 +20,15 @@ export default function Home() {
 
   return (
     <>
-      <div className="h-[80vh] w-full flex flex-col justify-center items-center font-semibold ">
-        <TypewriterEffect words={words} className="mb-5" />
-        <TypewriterEffect words={words2} />
+      <div className="h-[80vh] w-full flex flex-col justify-center items-center font-semibold">
+        <TypewriterEffect
+          words={words}
+          className="mb-5 text-4xl sm:text-5xl lg:text-8xl"
+        />
+        <TypewriterEffect
+          words={words2}
+          className="text-4xl sm:text-5xl lg:text-8xl"
+        />
         <CV />
       </div>
     </>

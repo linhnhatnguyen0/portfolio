@@ -21,7 +21,7 @@ export default function Experience() {
       <AnimatePresence>
         {open && (
           <motion.div
-            className="w-full h-full flex items-center justify-center fixed top-1/2 left-1/2 bg-[#b0ada08c] z-50 !transform -translate-x-1/2 -translate-y-1/2  backdrop-blur-lg text-black"
+            className="w-full h-full flex items-center justify-center fixed top-0 left-0 bg-[#b0ada08c] z-50 !transform backdrop-blur-lg text-black p-4 sm:p-8 lg:p-16"
             key={'cv'}
             layoutId={'cv'}
             initial={{ opacity: 0 }}
@@ -32,15 +32,15 @@ export default function Experience() {
               className="w-full h-screen bg-transparent absolute top-0 left-0 z-0"
               onClick={() => setOpen(false)}
             ></motion.div>
-            <motion.div className="w-3/4 h-5/6 flex flex-col items-start justify-start bg-[#fcfaf1] overflow-y-auto p-8 rounded-lg z-10">
-              <motion.div className=" flex flex-col items-center justify-start">
-                <h1 className="my-5 font-bold text-[80px] text-[#8E705B]">
+            <motion.div className="w-full sm:w-3/4 lg:w-2/3 lg:h-5/6 flex flex-col items-center justify-start bg-[#fcfaf1] overflow-y-auto p-4 sm:p-8 lg:p-16 rounded-lg z-10">
+              <motion.div className="flex flex-col items-center justify-start">
+                <h1 className="my-2 lg:my-5 font-bold text-4xl sm:text-6xl lg:text-[80px] text-[#8E705B]">
                   {t('about-experiences').toUpperCase()}
                 </h1>
                 <Image
                   src={experiences}
                   alt="experiences tree"
-                  className="mb-32 w-2/3"
+                  className="mt-10 lg:w-2/3 sm:3/4 w-full h-auto"
                 />
               </motion.div>
               <motion.button

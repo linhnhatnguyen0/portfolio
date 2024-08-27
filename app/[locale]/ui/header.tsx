@@ -11,11 +11,7 @@ import LanguageChanger from '../components/LanguageChanger';
 function Header() {
   const { t } = useTranslation();
   return (
-    <Navbar
-      shouldHideOnScroll
-      className="h-[10vh] px-10 z-50"
-      position="sticky"
-    >
+    <Navbar className="h-[10vh] px-10 z-50" position="sticky">
       <NavbarBrand className="text-4xl font-bold">Logo</NavbarBrand>
       <NavbarContent
         className="hidden sm:flex gap-24 font-semibold"
