@@ -7,7 +7,15 @@ import Skills from './components/skills';
 import initTranslations from '../i18n';
 import TranslationProvider from '@/app/[locale]/components/TranslationProvider';
 
-export default async function Home({ params: { locale } }) {
+type Locale = 'en' | 'fr' | string;
+
+interface HomeProps {
+  params: {
+    locale: Locale;
+  };
+}
+
+export default async function Home({ params: { locale } }: HomeProps) {
   const { t, resources } = await initTranslations(locale, ['common']);
   return (
     <TranslationProvider
