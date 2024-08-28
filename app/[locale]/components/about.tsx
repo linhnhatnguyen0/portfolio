@@ -16,7 +16,7 @@ function About() {
       id="about"
       className="flex flex-col lg:flex-row items-center h-auto lg:h-screen w-full relative justify-around px-4 sm:px-8 lg:px-24 mb-12 lg:mb-0"
     >
-      <div className="left w-full lg:w-[70%] flex flex-col justify-between mb-8 lg:mb-0">
+      <div className="left w-full lg:w-[70%] flex flex-col justify-between items-center lg:items-start mb-8 lg:mb-0">
         <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-4 lg:mb-4">
           {t('about-title')}
         </h1>
@@ -24,14 +24,14 @@ function About() {
         <p className="w-full lg:w-[80%] mb-4 lg:mb-8 font-medium leading-7">
           {t('about-description')}
         </p>
-        <ul className="w-3/4 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
-          <li>
+        <ul className="w-full lg:w-3/4 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
+          <li className="flex justify-center">
             <Education />
           </li>
-          <li>
+          <li className="flex justify-center">
             <Skills />
           </li>
-          <li>
+          <li className="flex justify-center">
             <Experience />
           </li>
         </ul>

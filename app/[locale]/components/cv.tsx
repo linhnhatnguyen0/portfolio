@@ -40,7 +40,7 @@ export default function CV() {
               className="w-full h-screen bg-transparent absolute top-0 left-0 z-0"
               onClick={() => setOpen(false)}
             ></motion.div>
-            <motion.div className="w-3/4 lg:w-1/2 h-5/6 flex flex-col items-start justify-start bg-[#ece9dc] overflow-y-auto p-4 rounded-lg z-10">
+            <motion.div className="w-full mx-8 lg:w-1/2 h-5/6 flex flex-col items-start justify-start bg-[#ece9dc] overflow-y-auto p-4 rounded-lg z-10">
               <motion.div className="mt-4 flex flex-col items-center justify-start">
                 <Button
                   className="mb-4 text-medium font-bold bg-[#8e705b] text-white !rounded-lg !shadow-lg !transform hover:scale-105 transition-all duration-300"
